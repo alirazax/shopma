@@ -6,13 +6,13 @@
     <title>shopma</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
+  <body class="overflow-x-hidden">
     <div class="py-8 px-8 bg-gradient-to-b from-[#2a2a2a] to-[#020202]">
       <!--first part nav in which shopma and four child div like button buy now , products on sales, products-->
       <nav class="flex justify-between sticky top-0 z-50 items-center">
-        <div class="text-[45px] text-white hidden sm:block">SHOPMA</div>
+        <div class="text-[45px] text-white hidden md:block">SHOPMA</div>
         <div
-          class="w-16 h-16 bg-white rounded-full sm:hidden relative flex items-center justify-center"
+          class="w-16 h-16 bg-white rounded-full md:hidden relative flex items-center justify-center"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -31,7 +31,7 @@
             <line x1="3" y1="18" x2="21" y2="18" />
           </svg>
         </div>
-        <div class="hidden sm:block">
+        <div class="hidden md:block">
           <p class="text-gray-400 flex gap-3">
             Product on <span class="text-white">{27 Feb2024}</span>
           </p>
@@ -39,7 +39,7 @@
             hot sale <span class="text-white"> {04:30PM} </span>
           </p>
         </div>
-        <div class="text-white hidden sm:block">
+        <div class="text-white hidden md:block">
           <p>Sales,Product,Services,About</p>
         </div>
         <div
@@ -70,44 +70,9 @@
           </div>
         </div>
       </nav>
-      <!-- this is second part in which conact us and featured include-->
-      <div class="justify-between mt-8 hidden sm:flex">
-        <div class="flex gap-3">
-          <p class="text-white">contact us</p>
-          <div
-            class="w-8 h-8 bg-white rounded-full center-full flex items-center justify-center"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="14"
-              height="14"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="feather feather-link"
-            >
-              <path
-                d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"
-              />
-              <path
-                d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"
-              />
-            </svg>
-          </div>
-        </div>
-        <div>
-          <button
-            class="px-3 py-1 border-2 border-white rounded-full text-white mr-[500px]"
-          >
-            /featured
-          </button>
-        </div>
-      </div>
+
       <!-- this is a part of responsive product on copy from above-->
-      <div class="mt-8 sm:hidden">
+      <div class="mt-8 md:hidden">
         <p class="text-gray-400 flex justify-between">
           Product on <span class="text-white">{27 Feb2024}</span>
         </p>
@@ -116,119 +81,147 @@
         </p>
       </div>
       <!--this is a third part in which picture and two child picture plus peragraph elevate your experience -->
-      <div class="sm:flex">
-        <div
-          class="w-full h-screen mx-10 mx-auto sm:w-[350px] sm:h-[500px] bg-gradient-to-b from-[#2a2a2a] to-[#020202] rounded-2xl mt-8 rotate-[6deg]"
-        >
+
+      <div class="mt-10 sm:flex">
+        <!--first child in which contact and pictures-->
+        <div>
+          <div class="gap-3 hidden md:flex">
+            <p class="text-white">contact us</p>
+            <div
+              class="w-8 h-8 bg-white rounded-full center-full flex items-center justify-center"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="feather feather-link"
+              >
+                <path
+                  d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"
+                />
+                <path
+                  d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"
+                />
+              </svg>
+            </div>
+          </div>
           <div
-            class="w-full h-screen mx-10 mx-auto sm:w-[350px] sm:h-[500px] bg-[#dbe0e3] -rotate-[6deg] object-cover bg-cover rounded-2xl sm:items-end flex"
-            style="background-image: url(girl\ glasses.png)"
+            class="w-full h-screen mx-10 mx-auto md:w-[350px] md:h-[500px] bg-gradient-to-b from-[#2a2a2a] to-[#020202] rounded-2xl mt-8 rotate-[6deg]"
           >
             <div
-              class="w-full flex-col-reverse sm:flex-row flex justify-between text-[12px] p-3"
+              class="w-full h-screen mx-10 mx-auto md:w-[350px] md:h-[500px] bg-[#dbe0e3] -rotate-[6deg] rounded-2xl md:items-end flex bg-cover bg-center bg-no-repeat"
+              style="background-image: url('girl\ glasses.png')"
             >
-              <div class="flex gap-3 text-white">
-                <button
-                  class="text-[12px] border-[1px] border-white rounded-full px-4 py-1 bg-[#bdbcaa]"
-                >
-                  stylish and rug</button
-                ><button
-                  class="text-12px border-[1px] border-white rounded-full px-4 py-1 text-[12px] bg-[#bdbcaa]"
-                >
-                  modern
-                </button>
-              </div>
-              <div>
-                <button class="bg-white rounded-full text-[12px] px-4 py-1">
-                  /new optics
-                </button>
+              <div
+                class="w-full flex-col-reverse md:flex-row flex justify-between text-[12px] p-3"
+              >
+                <div class="flex gap-3 text-white">
+                  <button
+                    class="text-[12px] border-[1px] border-white rounded-full px-4 py-1 bg-[#bdbcaa]"
+                  >
+                    stylish and rug</button
+                  ><button
+                    class="text-12px border-[1px] border-white rounded-full px-4 py-1 text-[12px] bg-[#bdbcaa]"
+                  >
+                    modern
+                  </button>
+                </div>
+                <div>
+                  <button class="bg-white rounded-full text-[12px] px-4 py-1">
+                    /new optics
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
-
-        <div class="grow flex flex-col-reverse sm:flex-col">
-          <div class="flex flex-col sm:items-end mt-5">
-            <!--this is responsivve part featured button-->
+        <!--second child of  fearured button elevate your experinece -->
+        <div class="w-full flex flex-col-reverse md:pl-10 md:flex-col">
+          <div class="flex justify-end w-full">
             <div>
-              <button
-                class="px-3 py-1 border-2 sm:hidden mt-20 border-white rounded-full text-white mb-12"
-              >
-                /featured
-              </button>
-            </div>
-            <!--i repeat this -->
-            <p
-              class="text-white text-[40px] leading-none hidden sm:block sm:text-left"
-            >
-              elevate your experience with our <br />handpicked featured
-              <u>selection...</u>
-            </p>
-            <p class="text-white text-[40px] leading-none sm:hidden">
-              elevate your experience with our handpicked featured
-              <u>selection...</u>
-            </p>
-
-            <div
-              class="flex mt-10 sm:mt-5 sm:items-center items-center sm:justify-between"
-            >
-              <div class="flex sm:mr-[450px]">
-                <div
-                  class="w-[120px] h-[120px] sm:w-12 sm:h-12 bg-white rounded-full bg-cover bg-center"
-                  style="background-image: url(mini\ glasses.png)"
-                ></div>
-                <div
-                  class="w-[120px] h-[120px] sm:w-12 sm:h-12 bg-white rounded-full bg-cover bg-center"
-                  style="background-image: url(glasses.png)"
-                ></div>
-                <div
-                  class="w-[120px] h-[120px] sm:w-12 sm:h-12 bg-white rounded-full bg-cover bg-center"
-                  style="background-image: url(couple.png)"
-                ></div>
-              </div>
-              <div
-                class="w-[70px] h-[70px] sm:w-8 sm:sm:h-8 border-[1px] rounded-full border-white flex items-center justify-center"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="12"
-                  height="12"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="white"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="feather feather-arrow-right"
+              <div>
+                <button
+                  class="px-3 py-1 border-2 border-white rounded-full text-white md:mb-0 mb-12"
                 >
-                  <line x1="5" y1="12" x2="19" y2="12" />
-                  <polyline points="12 5 19 12 12 19" />
-                </svg>
+                  /featured
+                </button>
+              </div>
+              <div>
+                <p
+                  class="text-white text-[40px] leading-none md:block mt-8 md:text-left"
+                >
+                  elevate your experience with our
+                  <br class="hidden md:block" />handpicked featured
+                  <u>selection...</u>
+                </p>
+                <div class="flex mt-10 md:mt-5 items-center md:justify-between">
+                  <div class="flex">
+                    <div
+                      class="w-[120px] h-[120px] md:w-12 md:h-12 bg-white rounded-full bg-cover bg-center"
+                      style="background-image: url(mini\ glasses.png)"
+                    ></div>
+                    <div
+                      class="w-[120px] h-[120px] md:w-12 md:h-12 bg-white rounded-full bg-cover bg-center"
+                      style="background-image: url(glasses.png)"
+                    ></div>
+                    <div
+                      class="w-[120px] h-[120px] md:w-12 md:h-12 bg-white rounded-full bg-cover bg-center"
+                      style="background-image: url(couple.png)"
+                    ></div>
+                  </div>
+                  <div
+                    class="w-[70px] h-[70px] md:w-8 md:md:h-8 border-[1px] rounded-full border-white flex items-center justify-center"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="feather feather-arrow-right"
+                    >
+                      <line x1="5" y1="12" x2="19" y2="12" />
+                      <polyline points="12 5 19 12 12 19" />
+                    </svg>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+
+          <!--this is child 2 part 2 in which equip button and shopma paragraph-->
           <div
-            class="mt-20 sm:mt-[200px] text-center sm:text-left sm:px-20 leading-none"
+            class="mt-20 md:mt-[150px] text-center md:text-left leading-none"
           >
             <button
               class="border-2 border-white rounded-full px-4 py-1 text-white"
             >
               /equipe for excellence
             </button>
-            <p class="text-gray-400 text-[40px] mt-6 sm:text-[60px]">
+            <p class="text-gray-400 text-[40px] mt-6 md:mt-0 md:text-[60px]">
               shopma introducing our <br />
               latest
-              <span class="text-white text[40px] sm:text-[60px]"
+              <span class="text-white text[40px] md:text-[60px]"
                 >optics eyeglasses
               </span>
             </p>
-            <div class="sm:flex">
+            <div class="md:flex">
               <div>
                 >
-                <p class="text-white text-[30px] sm:text-[60px]">collection</p>
+                <p class="text-white text-[30px] md:text-[60px]">collection</p>
               </div>
               <div
-                class="flex justify-center items-center sm:block sm:ml-5 mt-8"
+                class="flex justify-center items-center md:block md:ml-5 mt-8"
               >
                 <div
                   class="w-16 h-16 border-[1px] rounded-full bg-white border-white flex items-center justify-center"
@@ -251,6 +244,213 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--this is fourth div in which three child first prodcut button second 3d object and third girl photo rounded  -->
+    <div class="p-5 md:flex justify-between">
+      <!--first child -->
+      <div class="flex flex-col-reverse sm:block sm:w-1/3">
+        <div class="mt-10 sm:mt-0">
+          <div class=" ">
+            <button
+              class="text-gray-400 border-[1px] border-gray-400 px-2 py- rounded-full"
+            >
+              /new products
+            </button>
+          </div>
+          <p class="text-black text-[33px] leading-none sm:text-[43px] mt-5">
+            sight redefined, upgrde to <br />our
+            <span class="text-gray-600 TEXT-[33px] sm:text-[43px]"
+              >state-of-the-art optics <br />eyeglasses</span
+            >
+          </p>
+        </div>
+        <!--in which button fashion, blue light, new optics, release-->
+        <div class="flex">
+          <div class="mt-5 relative flex items-center flex-row-reverse">
+            <div
+              class="rounded-full w-16 h-16 border-[1px] border-gray-400 flex items-center justify-center text-gray-600"
+            >
+              /fashion
+            </div>
+            <div
+              class="rounded-full size-24 flex items-center justify-center border-[1px] border-gray-400 sm:absolute sm:top-[20px] sm:left-[110px] text-gray-600"
+            >
+              /blue light
+            </div>
+            <div
+              class="size-[100px] bg-black rounded-full md:absolute md:top-[75px] md:left-[5px] flex flex-col items-center justify-center"
+            >
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  fill="white"
+                  height="auto"
+                  width="40px"
+                  version="1.1"
+                  id="Layer_1"
+                  viewBox="10 10 475.615 350.615"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <g>
+                      <path
+                        d="M472.615,205.774h-25.344c-12.797-37.99-48.686-65.462-90.935-65.462c-43.224,0-79.837,28.73-91.823,68.087    c-7.582-5.011-17.305-8.115-28.211-8.115c-10.903,0-20.624,3.103-28.207,8.114c-11.989-39.357-48.608-68.085-91.831-68.085    c-42.249,0-78.135,27.472-90.93,65.462H0v19.692h20.925c-0.403,3.565-0.656,7.175-0.656,10.846    c0,52.933,43.063,95.99,95.995,95.99s96-43.058,96-95.99c0-0.552-0.073-1.085-0.083-1.635h0.069    c0-6.952,9.88-14.702,24.053-14.702c14.178,0,24.053,7.75,24.053,14.702h0.073c-0.01,0.549-0.083,1.083-0.083,1.635    c0,52.933,43.058,95.99,95.99,95.99s96-43.058,96-95.99c0-3.671-0.253-7.281-0.656-10.846h20.935V205.774z M116.264,312.611    c-42.072,0-76.303-34.231-76.303-76.298c0-42.077,34.231-76.308,76.303-76.308c42.077,0,76.308,34.231,76.308,76.308    C192.572,278.38,158.341,312.611,116.264,312.611z M356.337,312.611c-42.067,0-76.298-34.231-76.298-76.298    c0-42.077,34.231-76.308,76.298-76.308c42.077,0,76.308,34.231,76.308,76.308C432.644,278.38,398.413,312.611,356.337,312.611z"
+                      />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <p class="text-white">/new optics</p>
+            </div>
+            <div
+              class="size-16 md:absolute md:top-[130px] md:left-[120px] rounded-full text-gray-400 md:flex justify-center items-center border-[1px] border-gray-400"
+            >
+              /release
+            </div>
+            <!--this div include collection button and paragraph child 2 of first ch-->
+            <div
+              class="sm:absolute h-64 w-64 left-80 top-[80px] hidden sm:block"
+            >
+              <div>
+                <button
+                  class="border-2 border-black rounded-full px-2 py-[1px] text-gray-650"
+                >
+                  /collection
+                </button>
+              </div>
+              <div class="">
+                <p class="text-[16px] w-[300px] h-[40px]">
+                  eyes on the future, elevate <br />your vision with our
+                  cutting- <br />edge optics eyewear.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--second child-->
+      <div
+        class="w-full flex flex-col justify-between items-center md:mx-0 mt-20 sm:mt-0 md:mx-0 md:w-1/3"
+      >
+        <div class="w-full">
+          <div class="h-[295px] rounded-3xl -rotate-[3deg]">
+            <div
+              class="h-[295px] rounded-3xl px-5 p-2 rotate-[3deg] flex flex-col justify-between bg-center bg-cover"
+              style="background-image: url(shorma\ glasses.PNG)"
+            >
+              <!--include 3d object and copy button-->
+
+              <div class="flex items-center gap-5">
+                <div class="div">
+                  <button class="bg-white rounded-2xl px-2 py-[1px]">
+                    /3d optics
+                  </button>
+                </div>
+                <div
+                  class="p-2 bg-white rounded-full flex items-center justify-center"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="10"
+                    height="10"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-copy"
+                  >
+                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2" />
+                    <path
+                      d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="flex justify-between items-end">
+                <div class="text-white">
+                  <p class="text-[29px] leading-none">
+                    visual brilliance, explore <br />the world with confidence
+                    <br />in our optics glasses
+                  </p>
+                </div>
+                <div
+                  class="bg-white size-6 rounded-full flex items-center justify-center"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="14"
+                    height="14"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="feather feather-arrow-up-right"
+                  >
+                    <line x1="7" y1="17" x2="17" y2="7" />
+                    <polyline points="7 7 17 7 17 17" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-8 md:mt-0 flex gap-2 justify-center">
+          <div class="">
+            <button
+              class="rounded-full border-2 border-gray-400 px-2 flex items-center gap-2 text-gray-600"
+            >
+              3D glasses
+              <span class="w-[60px] h-[1px] bg-gray-300 flex flex-row"></span>
+              01
+            </button>
+          </div>
+          <div class="div">
+            <button
+              class="border-2 border-gray-300 rounded-full px-2 text-gray-400"
+            >
+              modering <sup>02</sup>
+            </button>
+          </div>
+          <div class="div">
+            <button
+              class="border-2 border-gray-300 rounded-full px-2 text-gray-400"
+            >
+              green screen <sup>03</sup>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!--third child in which girl photo rounded-->
+      <div>
+        <div
+          class="w-[325px] h-[325px] mt-10 md:mx-0 mx-auto bg-gradient-to-b from-[#161616] via-[#656565] to-[#242424] rounded-full flex items-center justify-center bg-cover bg-center"
+        >
+          > >
+          <div class="p-1 border-2 border-white rounded-full">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-arrow-right"
+            >
+              <line x1="5" y1="12" x2="19" y2="12" />
+              <polyline points="12 5 19 12 12 19" />
+            </svg>
           </div>
         </div>
       </div>
